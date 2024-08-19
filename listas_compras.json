@@ -1,0 +1,66 @@
+[
+  {
+    "supermercado": "bravo",
+    "fecha": "2024-08-14T23:18:33.657Z",
+    "iva": 0.18,
+    "productos": [
+      {
+        "producto": "platano",
+        "cantidad": 10,
+        "unidad": "unidad",
+        "precio": 30,
+        "precioConIVA": 35.4,
+        "ivaProducto": 5.3999999999999995
+      },
+      {
+        "producto": "azucar",
+        "cantidad": 5,
+        "unidad": "libras",
+        "precio": 40,
+        "precioConIVA": 47.199999999999996,
+        "ivaProducto": 7.199999999999999
+      },
+      {
+        "producto": "arroz",
+        "cantidad": 10,
+        "unidad": "libras",
+        "precio": 40,
+        "precioConIVA": 47.199999999999996,
+        "ivaProducto": 7.199999999999999
+      }
+    ],
+    "total": "418.90"
+  },
+  {
+    "supermercado": "bravo",
+    "fecha": "2024-08-15T00:02:51.859Z",
+    "iva": 0.18,
+    "productos": [
+      {
+        "producto": "platano",
+        "cantidad": 10,
+        "unidad": "unidad",
+        "precio": 30,
+        "precioConIVA": 35.4,
+        "ivaProducto": 5.3999999999999995
+      },
+      {
+        "producto": "azucar",
+        "cantidad": 5,
+        "unidad": "libras",
+        "precio": 40,
+        "precioConIVA": 47.199999999999996,
+        "ivaProducto": 7.199999999999999
+      },
+      {
+        "producto": "arroz",
+        "cantidad": 10,
+        "unidad": "libras",
+        "precio": 40,
+        "precioConIVA": 47.199999999999996,
+        "ivaProducto": 7.199999999999999
+      }
+    ],
+    "total": "1062.00"
+  }
+]

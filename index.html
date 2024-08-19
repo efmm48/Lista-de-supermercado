@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Compras</h1>
+        <form id="inicializacion-form">
+            <input type="text" id="supermercado" placeholder="Nombre del Supermercado" required>
+            <input type="number" id="iva-porcentaje" placeholder="IVA (%)" min="0" max="100" step="0.1" required>
+            <button type="submit">Iniciar Lista</button>
+        </form>
+        <h2 id="supermercado-titulo"></h2>
+        <p id="iva-info"></p>
+        <form id="producto-form" style="display: none;">
+            <input type="text" id="producto" placeholder="Nombre del Producto" required>
+            <input type="number" id="cantidad" placeholder="Cantidad" min="1" step="1" required>
+            <input type="text" id="unidad" placeholder="Unidad (ej. kg, litro, pieza)" required>
+            <input type="number" id="precio" placeholder="Precio por unidad" step="0.01" required>
+            <button type="submit">Agregar Producto</button>
+        </form>
+        <ul id="lista-productos"></ul>
+        <div id="totales">
+            <p>Subtotal: <span id="subtotal">0.00</span></p>
+            <p>IVA Total: <span id="iva-total">0.00</span></p>
+            <p>Total: <span id="total">0.00</span></p>
+        </div>
+        <div class="botones">
+            <button id="guardar">Guardar Lista</button>
+            <button id="compartir">Compartir por WhatsApp</button>
+            <button id="cargar">Cargar Listas Guardadas</button>
+            <button id="exportar">Exportar y Compartir JSON</button>
+        </div>
+        <div id="listas-guardadas" style="display: none;">
+            <h3>Listas Guardadas</h3>
+            <ul id="lista-guardadas"></ul>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dexie/3.2.2/dexie.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
